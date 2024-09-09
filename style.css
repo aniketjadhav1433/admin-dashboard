@@ -47,7 +47,7 @@ Box-sizing: border-box;
     align-self: self-start;
     top: 0;
     bottom: 0;
-    transition: all 0.4s ease;
+    transition: display 0.4s ease;
     height: 100vh;
     display: none;
 }
@@ -249,7 +249,6 @@ span{
 }
 
 .inline{
-    /* margin-right: 20px; */
     max-width: 100%;
     text-wrap: wrap;
     font-size: clamp(0.7rem, 1vw, 5rem);
@@ -349,11 +348,6 @@ input{
     margin-top: 10px;
 }
 
-
-
-
-
-
 /* ************************ bottom ************************** */
 
 
@@ -398,9 +392,6 @@ tbody{
     font-size: clamp(1rem,1.3rem,4rem);
     margin-bottom: 5px;
 }
-
-
-
 
 
 /* ******************* right ********************** */
@@ -509,8 +500,6 @@ small{
 }
 
 
-
-
 /* ******************* responsive *********************** */
 
 
@@ -546,7 +535,6 @@ small{
     }
     .right{
         padding: 5px;
-       
     }
 
     .left.less{
@@ -607,6 +595,7 @@ small{
         display: none;
     }
     .left{
+        max-width: 60px;
         display: none;
     }
 
@@ -622,20 +611,13 @@ small{
         display: flex;
     }
 
-    .left{
-        max-width: 60px;
-    }
-
     .inline{
         max-width: 100%;
     }
     .right{
         max-width: 100%;
-    } 
-
-    .right{
         margin-left: 10px;
-    }
+    } 
     .main{
         justify-content: center;
         align-items: center;
@@ -665,14 +647,4 @@ small{
         justify-content: flex-start;
         gap: 10px;
     }
-
-   
 }
-@media (max-width:350px) {
-   .nones{
-    display: none;
-   }
-
-   
-}
- 
